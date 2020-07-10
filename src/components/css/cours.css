@@ -1,0 +1,120 @@
+.nav {
+    /* position: absolute; */
+    width: 100%;
+    /* height: 83px;
+right: 0px;
+top: 83px; */
+    background: #FFFFFF;
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+.menu_setting{
+    position: absolute;
+    right : 2%;
+    top:3%;
+    width: 10%;
+}
+.username{
+    position: absolute;
+    right : 9%;
+    top: 3%;
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+    line-height: 150%; 
+    color: #858585;
+}
+.searchbar {
+    position: absolute;
+    height: 6.5%;
+    top: 1.5%;
+    left: 18%;
+    border-radius: 100px;
+    width: 40%;
+    float: left;
+    MARGIN: 5PX;
+}
+
+
+
+.moduleName{
+position: relative;
+text-align: center;
+
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 19.5px;
+line-height: 29px;
+
+color: #793CB7;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Sider {
+    background: #FFFFFF;
+    border: 1px solid #F0F0FF;
+}
+
+.footer {
+    float: right;
+}
+
+.btn:hover {
+    background-color: linear-gradient(180deg, rgb(137, 62, 207) 0%, #DE67A2 100%);
+}
+
+.btn:active {
+    background-color: linear-gradient(180deg, rgb(137, 62, 207) 0%, #DE67A2 100%);
+    transform: translateY(4px);
+}
+
+.menu {
+    background: white;
+    border: 1px solid #F0F0FF;
+    bottom: 10%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.ant-layout {
+    background: #FFF9FE;
+    border: 1px solid #F0F0FF;
+}
+
+.img{
+    width: 100% ;
+     height:70%; 
+}
+.setting{
+
+    position: absolute;
+    right : 2%;
+    top: 3%;
+    font-size: 20px;
+}
+.notif{
+    position: absolute;
+    right : 6%;
+    top: 3%;
+    
+}
+.avatar{
+    position : absolute;
+    right : 17%;
+    top :2%;
+}
+
+.ant-card-body {
+    /* padding: 24px; */
+    padding: 0px;
+}
+.ant-card-bordered {
+     border: 0px solid #f0f0f0; 
+}
+
+.site-card-wrapper {
+    padding: 2%;
+    min-height: 450px;
+}
