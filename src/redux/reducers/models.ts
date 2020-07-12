@@ -13,7 +13,7 @@ export default (state:any = {}, action : Action ) =>{
         case ADD_ONE:
             return {
                 ...state,
-                [payload.model]:[ ...state[payload.model],payload.data]
+                [payload.model]:[ ...(state[payload.model]||[]),payload.data]
             }
         case EDIT_ONE:{
             return {
