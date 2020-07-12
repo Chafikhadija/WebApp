@@ -33,6 +33,8 @@ function LoginPage(){
       localStorage.setItem("token",resp.data.access_token)
       console.log("logged in succes", resp.data)
       history.replace("/")
+      window.location.reload();
+
     })
     .catch(err=>{
       message.error("wrong Email or password")
