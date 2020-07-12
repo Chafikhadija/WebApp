@@ -7,3 +7,52 @@
 .searchbar {
     width: 161px;
 }
+.task{
+    width: 568px;
+height: 616px;
+background: #FFFFFF;
+border: 2px solid #F0F0F0;
+box-shadow: 4px 4px 4px rgba(253, 116, 155, 0.31);
+border-radius: 10px;
+}
+.Instruction{
+    position: relative;
+left: 4%; 
+top:1%   ;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 21px;
+line-height: 24px;  
+
+    
+    color: #793CB7;
+}
+.InstructionTask{
+    position: relative;
+left: 4%; 
+top : 1%;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 24px;
+}
+.submitButton{
+    position: relative;
+    left: 10%;
+    top:20%;
+    height: 20%;
+    width:80%;
+}
+.submition{
+    position: relative;
+
+    width: 364px;
+height: 164px;
+left:20%;
+background: #FFFFFF;
+border: 2px solid #F0F0F0;
+box-shadow: 4px 4px 4px rgba(253, 116, 155, 0.31);
+border-radius: 10px;
+}

@@ -12,6 +12,7 @@ import { Provider } from "react-redux";
 import store from "./redux"
 import FilesList from "./pages/Files";
 import TasksTest from "./pages/tasks";
+import StudentTask from "./pages/StudentTask";
 
 
 function PrivateRoute({ children, ...rest }:any) {
@@ -58,6 +59,9 @@ const App = () => {
             </PrivateRoute>
             <PrivateRoute exact path="/module/:courseId/tasks">
               <TasksTest/>
+            </PrivateRoute>
+            <PrivateRoute path="/module/:courseId/tasks/:taskId/StudentTask">
+            <StudentTask/>
             </PrivateRoute>
         </Switch>
       </Router>

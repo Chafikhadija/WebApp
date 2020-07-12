@@ -85,7 +85,7 @@ function ModelLayout() {
           <Layout style={{ padding: '0 24px 24px' }} className="content">
             <Breadcrumb style={{ margin: '16px 0' }}>
             <Breadcrumb.Item><Link to="/">Courses</Link></Breadcrumb.Item>
-              <Breadcrumb.Item>Modules</Breadcrumb.Item>
+              <Breadcrumb.Item>Models</Breadcrumb.Item>
             </Breadcrumb>
             <Content className='menu'>
             <div className="site-card-wrapper">

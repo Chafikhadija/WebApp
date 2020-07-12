@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Layout from '../components/CourseLayout'
-import { Button, Input, Collapse } from 'antd';
+import { Button, Input, Collapse, Row, Col } from 'antd';
 import '../components/css/tasks.css';
 import { PlusOutlined, SearchOutlined } from '@ant-design/icons'
 import Task from '../components/Task';
@@ -21,18 +21,16 @@ function TasksTest() {
         dispatch(fetchAll("tasks",query.query()))
     }, [])
     return (
-        <Layout>
-            <div>
-                <div style={{ paddingBottom: "20px", position: "sticky", float: "right" }}>
-                    <Button className="mybtn" icon={<PlusOutlined />} onClick={() => showCreateModal(!createModalVisible)} >devoir</Button>
-                </div>
-                <div style={{ paddingBottom: "20px", position: "sticky", float: "right" }}>
-                    <Input placeholder="Search" className="searchbar" prefix={<SearchOutlined />} />
-                </div>
-            </div>
-            <Collapse accordion defaultActiveKey={["1"]}>
-                {tasks?.map((task: any) => <Task task={task} />)}
-            </Collapse>
+       <Layout>
+           <div style={{padding:"20px"
+    }}>
+           <Row gutter={[48, 24]} >
+                 {tasks?.map((task: any) =><Col className="gutter-row" sm={24} md={12} lg={6} >
+                 <Task task={task} /></Col>)}
+                 </Row>
+           </div>
+                
+                 
         </Layout>
     )
 }
