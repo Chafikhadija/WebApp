@@ -94,7 +94,7 @@ function SignUp() {
               </div>
               <div className="Phone4">
                 <div className="lab14">
-                  <label className="label14">filiere</label>
+                  <label className="label14">Option : </label>
                 </div>
                 <div>
                   <Select  style={{ width: 120 }} onSelect={(v)=>  setCredentials((c) => ({

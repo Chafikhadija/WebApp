@@ -118,7 +118,7 @@ function StudentTask() {
         <table>
           <tr>
             <td>
-              {tasks?.map((task: any) => (
+              {tasks?.filter((task:any) => task.id == taskId)?.map((task: any) => (
                 <div className="task">
                   <div className="Instruction">Instructions :</div>
                   <div className="InstructionTask">
@@ -132,7 +132,7 @@ function StudentTask() {
                   <div>
                     <br />
                     {documents?.map((doc: any) => (
-                      <>{doc.title}</>
+                      <a href={`http://localhost:3009/documents/files/${doc.url}`} target="_blank">{doc.title}</a>
                     ))}
                   </div>
                 </div>
@@ -157,7 +157,7 @@ function StudentTask() {
              
               </div>
              {solutions?.length>0 && <div className="submitButton"><h3>Ma Solution:</h3>
-                <a href={`http://localhost:3009/documents/files/${solutions[0].document.url}`} target="_blank">{solutions[0].document.title}</a>
+                <a href={`http://localhost:3009/documents/files/${solutions[0].document.url}`} target="_blank" >{solutions[0].document.title}</a>
                 </div>}
               <br />
               <br />

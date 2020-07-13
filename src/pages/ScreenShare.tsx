@@ -6,7 +6,7 @@ let hasjoined = false
 function ScreenShare() {
     const [connection, setConnection] = useState<any>(null)
     const [stream, setStream] = useState<any>(null)
-    const [canShareScreen, setCanShare] = useState(false)
+    const [canShareScreen, setCanShare] = useState(true)
     const videoContainer = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
@@ -78,7 +78,15 @@ function ScreenShare() {
         }
     },[stream])
 
-    return (
+    if(!canShareScreen && !hasjoined){
+        console.log("joining")
+        connection?.join("hehe xd", function() {
+            console.log("sharing is caring !")
+        });
+        hasjoined=true;
+    }
+
+    return(
         <Layout>
             <video controls id="videos-container" ref={videoContainer}   height={500} ></video>
             <Button 
@@ -89,7 +97,7 @@ function ScreenShare() {
                     });
             }}
             >Screen Share</Button>
-       
+
         </Layout>
     )
 }
