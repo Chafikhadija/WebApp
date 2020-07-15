@@ -96,11 +96,12 @@ function SignUp() {
                 <div className="lab14">
                   <label className="label14">Option : </label>
                 </div>
-                <div>
+                <div className="searchbar4">
                   <Select  style={{ width: 120 }} onSelect={(v)=>  setCredentials((c) => ({
                         ...c,
                         filiere: v,
-                      }))}>
+                      }))}  className="searchbar4"                   
+                      >
                     {filiers?.map((fil:any)=><Select.Option value={fil.id}>{fil.title}</Select.Option>)}
                   </Select>
                 </div>

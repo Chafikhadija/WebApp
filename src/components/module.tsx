@@ -77,7 +77,7 @@ function ModelLayout() {
           style={{ height: '100%', borderRight: 0 }}
         >
           
-            <Menu.Item key="1" icon={<Model />} ><Link to={"/module/"+courseId}>modules</Link></Menu.Item>
+            <Menu.Item key="1" icon={<Model />} ><Link to={"/module/"+courseId}>models</Link></Menu.Item>
             <Menu.Item key="3" icon={<SettingFilled style={{color:"rgba(206, 47, 142, 0.61)"}}/>} ><Link to="/Setting">settings</Link></Menu.Item>
           
         </Menu>

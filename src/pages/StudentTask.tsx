@@ -129,7 +129,7 @@ function StudentTask() {
                     <br />
                   </div>
                   <div className="Instruction">Files :</div>
-                  <div>
+                  <div className="files">
                     <br />
                     {documents?.map((doc: any) => (
                       <a href={`http://localhost:3009/documents/files/${doc.url}`} target="_blank">{doc.title}</a>
@@ -140,7 +140,7 @@ function StudentTask() {
             </td>
             <td>
               <div className="submition">
-                <div className="submitButton">
+                <div className="submitButton1">
                   <Button shape="round" className="btnt4" onClick={addSolution}>
                     Submit Files
                   </Button>
@@ -148,7 +148,7 @@ function StudentTask() {
 
                 <div className="submitButton"></div>
                 <div className="submitButton">
-                  <Upload {...statut}>
+                  <Upload {...statut} className="upload">
                     <Button className="btnt4">
                       <UploadOutlined /> Click to Upload
                     </Button>
@@ -156,11 +156,13 @@ function StudentTask() {
                 </div>
              
               </div>
-             {solutions?.length>0 && <div className="submitButton"><h3>Ma Solution:</h3>
-                <a href={`http://localhost:3009/documents/files/${solutions[0].document.url}`} target="_blank" >{solutions[0].document.title}</a>
+              <br />
+             {solutions?.length>0 && <div className="submitButton"><h3 className="Instruction">My Solution :</h3>
+                <a href={`http://localhost:3009/documents/files/${solutions[0].document.url}`} target="_blank" >
+                {solutions[0].document.title}</a>
                 </div>}
-              <br />
-              <br />
+                <br />
+
               <br />
               <br />
               <br />

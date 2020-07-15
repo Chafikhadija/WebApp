@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Form, Modal, Layout, Menu, Breadcrumb, Card, Col, Row, Input, Button } from 'antd';
 import { Link } from "react-router-dom";
+import courses from "../components/imgs/courses.png"
 function CoursCard(cours: any) {
   const { title, id, anneScolaire } = cours
 
@@ -10,7 +11,7 @@ function CoursCard(cours: any) {
       style={{ width: 200, height: 200,background: "#FFF9FE"
     }}
       cover={<Link to={"/module/" + id} className="CardCouse">
-        <img style={{ width: "100%", height: 140 }} alt="example" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/courses-3-248098.png" /></Link>}
+        <img style={{ width: "100%", height: 140 }} alt="example" src={courses} /></Link>}
     >
       <div style={{ display: "inline-block", textAlign: "center", width:"100%" }}>
        {title}

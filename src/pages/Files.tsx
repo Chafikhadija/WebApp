@@ -224,7 +224,7 @@ interface File {
     >
       
       <Menu.Item key="module" icon={<Model />}style={{color:'rgba(0, 0, 0, 0.65)'}} >
-        <Link to={"/module/"+courseId}>modules</Link>
+        <Link to={"/module/"+courseId}>models</Link>
       </Menu.Item>
       <Menu.Item key="3" icon={<SettingFilled style={{color:"rgba(206, 47, 142, 0.61)"}}/>} ><Link to="/Setting">settings</Link></Menu.Item>
 

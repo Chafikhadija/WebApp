@@ -32,19 +32,55 @@ line-height: 24px;
     position: relative;
 left: 4%; 
 top : 1%;
+<<<<<<< HEAD
+=======
+padding: 3%;
+>>>>>>> 890c88ca1f3536299450994a2f07dd051f6a4a29
 font-family: Poppins;
 font-style: normal;
 font-weight: normal;
 font-size: 12px;
 line-height: 24px;
 }
+<<<<<<< HEAD
 .submitButton{
     position: relative;
     left: 10%;
+=======
+.files{
+    position: relative;
+left: 4%; 
+top : 1%;
+padding: 3%;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 24px;
+color: rgb(26, 102, 245);
+
+}
+.submitButton{
+    position: relative;
+    left: 25%;
+>>>>>>> 890c88ca1f3536299450994a2f07dd051f6a4a29
     top:20%;
     height: 20%;
     width:80%;
 }
+<<<<<<< HEAD
+=======
+.submitButton1{
+    position: relative;
+    left: 25%;
+    top:20%;
+    height: 23%;
+    width:52%;
+}
+.upload{
+    width:500px;
+}
+>>>>>>> 890c88ca1f3536299450994a2f07dd051f6a4a29
 .submition{
     position: relative;
 
